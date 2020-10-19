@@ -14,5 +14,13 @@
     "./dist"
   ],
   "author": "AndrewBeletskiy <AndrewBeletskiy@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleygwilliams/ab-mutable-list/issues"
+  },
+  "homepage": "https://github.com/ashleygwilliams/ab-mutable-list",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashleygwilliams/ab-mutable-list.git"
+  }
 }
