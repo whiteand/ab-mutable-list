@@ -1,6 +1,6 @@
 {
   "name": "ab-mutable-list",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A mutable one way linked list",
   "main": "dist/index.js",
   "scripts": {
