@@ -152,13 +152,17 @@ toArray(
 
 Transforms list to array.
 
+Complexity O(n). Immutable function.
+
 ```javascript
 toArray(append(empty, 1)); // [1]
 ```
 
 ### `fromArray<T>(arr: T[]): TList<T>`
 
-Transforms array to list
+Transforms array to list.
+
+Complexity O(n). Immutable function.
 
 ```javascript
 fromArray([1, 2, 3]);
