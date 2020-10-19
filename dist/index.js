@@ -224,3 +224,26 @@ function toArray(list) {
     return res;
 }
 exports.toArray = toArray;
+/**
+ * Transforms array into linked list
+ * Complexity O(n)
+ * Immutable function
+ * @param arr array to be transformed
+ */
+function fromArray(arr) {
+    if (arr.length <= 0)
+        return null;
+    var ind = 0;
+    var iter = {
+        next: function () {
+            if (ind >= arr.length) {
+                return { done: true, value: undefined };
+            }
+            var res = { value: arr[ind], done: false };
+            ind++;
+            return res;
+        }
+    };
+    return build(iter);
+}
+exports.fromArray = fromArray;

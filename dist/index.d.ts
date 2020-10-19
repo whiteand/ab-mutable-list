@@ -121,3 +121,10 @@ export declare function filter<T>(list: TList<T>, pred: (value: T) => boolean): 
  * @param list linked list
  */
 export declare function toArray<T>(list: TList<T>): T[];
+/**
+ * Transforms array into linked list
+ * Complexity O(n)
+ * Immutable function
+ * @param arr array to be transformed
+ */
+export declare function fromArray<T>(arr: T[]): TList<T>;
