@@ -248,3 +248,25 @@ export function toArray<T>(list: TList<T>): T[] {
   iterate(list, (v) => res.push(v));
   return res;
 }
+
+/**
+ * Transforms array into linked list
+ * Complexity O(n)
+ * Immutable function
+ * @param arr array to be transformed
+ */
+export function fromArray<T>(arr: T[]): TList<T> {
+  if (arr.length <= 0) return null;
+  var ind = 0;
+  const iter: Iterator<T> = {
+    next() {
+      if (ind >= arr.length) {
+        return { done: true, value: undefined };
+      }
+      var res: IIteratorResult<T> = { value: arr[ind], done: false };
+      ind++;
+      return res;
+    },
+  };
+  return build(iter);
+}
