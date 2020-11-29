@@ -12,7 +12,7 @@
     "linked list"
   ],
   "files": [
-    "./dist/**/*"
+    "./dist/**/*.{ts,js}"
   ],
   "author": "AndrewBeletskiy <AndrewBeletskiy@gmail.com>",
   "license": "ISC",
