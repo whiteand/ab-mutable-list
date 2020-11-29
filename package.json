@@ -12,7 +12,8 @@
     "linked list"
   ],
   "files": [
-    "./dist/**/*.{ts,js}"
+    "dist/index.js",
+    "dist/index.d.ts"
   ],
   "author": "AndrewBeletskiy <AndrewBeletskiy@gmail.com>",
   "license": "ISC",
@@ -24,7 +25,8 @@
     "type": "git",
     "url": "https://github.com/whiteand/ab-mutable-list.git"
   },
-  "types": "./dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "devDependencies": {
     "typescript": "^4.1.2"
   }
