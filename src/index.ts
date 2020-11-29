@@ -117,6 +117,7 @@ export function iterator<T>(list: TList<T>): Iterator<T> {
         return { done: true, value: undefined };
       }
       var value = currentNode.value;
+      currentNode = currentNode.next;
       return {
         value,
         done: false,
